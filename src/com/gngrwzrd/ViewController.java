@@ -3,6 +3,7 @@ package com.gngrwzrd;
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 
 public class ViewController {
 	
@@ -11,6 +12,11 @@ public class ViewController {
 	protected View _view;
 	protected int _resource;
 	protected EventDispatcher _dispatcher;
+	
+	public static void removeViewFromParentView(View view) {
+		if(view.getParent() == null) return;
+		((ViewGroup)view.getParent()).removeView(view);
+	}
 	
 	public ViewController(int resource) {
 		_resource = resource;
