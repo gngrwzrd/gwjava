@@ -1,4 +1,4 @@
-package com.gngrwzrd;
+package com.gngrwzrd.android;
 
 public class DelegateEvent {
 	

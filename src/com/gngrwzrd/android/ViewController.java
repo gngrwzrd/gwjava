@@ -1,4 +1,5 @@
-package com.gngrwzrd;
+package com.gngrwzrd.android;
+
 
 import android.app.Activity;
 import android.view.LayoutInflater;
